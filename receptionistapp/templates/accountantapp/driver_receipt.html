@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Driver payment Receipt</title>
+
+        {% load staticfiles %}
+
+    <link type="text/css" rel="stylesheet" href="{% static '/receptionistapp/css/bootstrap.min.css' %}"/>
+    <link type="text/css" rel="stylesheet" href="{% static '/receptionistapp/css/mystyles.css' %}"/>
+       <style type="text/css">
+
+           @page {
+            size: A4;
+            margin: 1cm;
+        }
+            body {
+                font-weight: 200;
+                font-size: 14px;
+            }
+            .header {
+                font-size: 20px;
+                font-weight: 100;
+                text-align: center;
+                color: #007cae;
+            }
+            .title {
+                font-size: 22px;
+                font-weight: 100;
+               /* text-align: right;*/
+               padding: 10px 20px 0px 20px;
+            }
+            .title span {
+                color: #007cae;
+            }
+            .details {
+                padding: 10px 20px 0px 20px;
+                text-align: left !important;
+                /*margin-left: 40%;*/
+            }
+            .hrItem {
+                border: none;
+                height: 1px;
+                /* Set the hr color */
+                color: #333; /* old IE */
+                background-color: #fff; /* Modern Browsers */
+            }
+        </style>
+</head>
+<body>
+  <div class='wrapper'>
+      <table class="table">
+          <tbody>
+            <tr>
+            <td><img src="../media/canonlogo.jpg" height="100" width="300"/></td>
+              <td> <h4 align="center">
+                  Location:Mengo &nbsp;
+                  Email: katendaenock@gmail.com
+                  &nbsp;
+                  Tel: 0706106197
+                  &nbsp;&nbsp;
+                  Date:{{ today }}
+              </h4></td>
+            </tr>
+          </tbody>
+      </table>
+            <div class='header'>
+                <h1 class='title'>Canon Innovations Ltd </h1>
+            </div>
+
+        <div>
+        <div class='details'>
+            <h1 align="center"><u>DRIVER PAYMENT RECEIPT</u></h1>
+            <hr>
+            <h4>RECEIPT NO:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{ payment_item.id }}</h4>
+            <h4>DATE OF PAYMENT:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{ payment_item.date }}</h4>
+            <h4>RECEIVED FROM:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{ payment_item.driver_name }}</h4>
+            <h4>PAID AMOUNT:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{ payment_item.paid_amount }}</h4>
+            <h4>PAID BY :&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{ payment_item.paid_by }}</h4>
+            <h4>RECEIVED BY:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{ payment_item.received_by }}</h4>
+
+        </div>
+    </div>
+  </div>
+
+</body>
+</html>

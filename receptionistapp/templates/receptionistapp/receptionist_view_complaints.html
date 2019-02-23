@@ -1,0 +1,41 @@
+{% extends "receptionistapp/reception_header.html" %}
+{% block body %}
+<h2>All available complaints</h2>
+<div class="container">
+    <a href="{% url 'receptionist_add_complaint' %}" class="btn btn-primary bt-sm" role="button">Add Complaint</a>
+     <br>
+<table class="table table-hover">
+        <thead class="table-danger">
+        <br>
+        <tr>
+            <td>id</td>
+            <td>Complaint</td>
+            <td>Driver</td>
+            <td>Other Complainant</td>
+            <td>Status</td>
+            <td>Forward</td>
+            <td>Edit</td>
+            <td>Delete</td>
+
+        </tr>
+        </thead>
+        <tbody>
+        {% for item in items %}
+            <tr>
+            <td>{{ item.pk }}</td>
+            <td>{{ item.complaint }}</td>
+            <td>{{ item.complainant }}</td>
+            <td>{{ item.other_complainant }}</td>
+            <td>{{ item.forwarded_status }} AND<br>{{ item.handled_status }}
+            </td>
+            <td><a href="{% url 'receptionist_forward_complaint' item.pk %}" class="btn btn-primary bt-sm" role="button">Forward</a></td>
+            <td><a href="{% url 'receptionist_edit_complaint' item.pk %}" class="btn btn-warning bt-sm" role="button">Edit</a></td>
+            <td><a href="{% url 'receptionist_delete_complaint' item.pk %}" class="btn btn-danger bt-sm" role="button">Delete</a></td>
+            </tr>
+        {% endfor %}
+
+        </tbody>
+    </table>
+
+</div>
+{% endblock %}
