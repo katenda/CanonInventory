@@ -39,7 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'receptionistapp',
     'crispy_forms',
-    'import_export',
+   # 'import_export',
     'twilio',
     'reportlab',
     'xhtml2pdf',

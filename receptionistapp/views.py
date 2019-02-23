@@ -2,6 +2,7 @@ from django.shortcuts import render, redirect,get_object_or_404
 from .models import *
 from .forms import *
 from datetime import datetime,timezone
+from django.utils import timezone
 from .resources import *
 from twilio.rest import Client
 from twilio.base.exceptions import TwilioRestException
@@ -609,37 +610,6 @@ def user_login(request):
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 ################################
 
  #   ACCOUNTANT DEFS  #
@@ -703,26 +673,31 @@ def display_viewstaff(request):
       ####################################################
 
     # calculating totals in salary Report
-def salaryreport (request):
-  current_month = datetime.timezone.now().month
-  queryset = Salary.objects.all().filter(Date__month=current_month)
-  total = 0
-  for instance in queryset:
-      total+=instance.Amount
-  context = {
-      'queryset':queryset,
-      'total': total,
-  }
-  return render(request, 'accountantapp/salaryindex.html', context)
 
+def salaryreport (request):
+    current_month = datetime.timezone.now().month
+    queryset = Salary.objects.all().filter(Date__month=current_month).order_by('-Date')
+    today = timezone.now()
+    month = today.strftime('%B')
+    total = 0
+    for instance in queryset:
+        total += instance.Amount
+    context = {
+        'month': month,
+        'queryset': queryset,
+        'total': total,
+    }
 #def expenditurereport(request):
 def expenditurereport (request):
   current_month = datetime.timezone.now().month
   queryset = Salary.objects.all().filter(Date__month=current_month)
+  today = timezone.now()
+  month = today.strftime('%B')
   total = 0
   for instance in queryset:
       total+=instance.Amount
   context = {
+      'month': month,
       'queryset':queryset,
       'total': total,
   }
@@ -733,10 +708,13 @@ def sundryreport (request):
   current_month = datetime.timezone.now().month
   queryset = Salary.objects.all().filter(Date__month=current_month)
   queryset = Sundry.objects.all().order_by('-Date')
+  today = timezone.now()
+  month = today.strftime('%B')
   total = 0
   for instance in queryset:
       total+=instance.Amount
   context = {
+      'month': month,
       'queryset':queryset,
       'total': total,
   }
@@ -753,10 +731,12 @@ class expenditurepdf(View):
     def get(self, request):
         expense = Spend.objects.all().order_by('-Date')
         today = timezone.now()
+        month = today.strftime('%B')
         totalexpense = 0
         for instance in expense:
             totalexpense += instance.Amount
         expensecontext ={
+            'month': month,
             'today':today,
             'expense':expense,
             'request': request,
@@ -769,10 +749,12 @@ class salariespdf(View):
     def get(self, request):
         salaries = Salary.objects.all().order_by('-Date')
         today = timezone.now()
+        month = today.strftime('%B')
         totalsalary = 0
         for instance in salaries:
             totalsalary += instance.Amount
         salarycontext ={
+            'month': month,
             'today':today,
             'salaries':salaries,
             'request': request,
@@ -787,24 +769,18 @@ class sundrypdf(View):
     def get(self, request):
         sundry = Sundry.objects.all().order_by('-Date')
         today = timezone.now()
+        month = today.strftime('%B')
         totalsundry = 0
         for instance in sundry:
             totalsundry += instance.Amount
         sundrycontext ={
+            'month': month,
             'today':today,
             'sundry':sundry,
             'request': request,
             'totalsundry': totalsundry,
         }
         return Render.render('accountantapp/sundrypdf.html',sundrycontext)
-
-
-        ####################################################
-        #        ARCHIVING OF THE MONTHLY REPORTS          #
-        ####################################################
-
-
-
 
         ####################################################
         #       PRINTING THE RECEIPTS                      #
@@ -843,6 +819,43 @@ class sundryreceipt(View):
         }
         return Render.render('accountantapp/sundryreceipt.html', sundrycontext)
 
+    ####################################################
+    #        ARCHIVING OF THE MONTHLY REPORTS          #
+    ####################################################
+
+def salaryarchive(request):
+    queryset = Salary.objects.all().order_by('-Date')
+    total = 0
+    for instance in queryset:
+        total += instance.Amount
+    context = {
+        'queryset': queryset,
+        'total': total,
+    }
+    return render(request, 'accountantapp/salaryarchive.html', context)
+
+def expenditurearchive(request):
+    queryset = Spend.objects.all().order_by('-Date')
+    total = 0
+    for instance in queryset:
+        total += instance.Amount
+    context = {
+        'queryset': queryset,
+        'total': total,
+    }
+    return render(request, 'accountantapp/expenditurearchive.html', context)
+
+# calculating totals in sundryexpense report
+def sundryarchive(request):
+    queryset = Sundry.objects.all().order_by('-Date')
+    total = 0
+    for instance in queryset:
+        total += instance.Amount
+    context = {
+        'queryset': queryset,
+        'total': total,
+    }
+    return render(request, 'accountantapp/sundryarchive.html', context)
 
 
 
