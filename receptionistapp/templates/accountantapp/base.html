@@ -37,8 +37,13 @@ arial-controls="navbarsExample02" arial-exapanded="false">
           </li></h4>
 
            <h4><li class="nav-item {% if url_name == 'expenditurereport' %}active{% endif %}">
-              <a class="nav-link" href="{% url 'expenditurereport'  %}">General Reports</a>
+              <a class="nav-link" href="{% url 'expenditurereport'  %}">Monthly Reports</a>
           </li></h4>
+            <h4>
+            <li class="nav-item {% if url_name == 'expenditurearchive' %}active{% endif %}">
+                 <a class="nav-link" href="{% url 'expenditurearchive' %}">Archived Records</a>
+             </li>
+            </h4>
          {% endwith %}
       </ul>
       <!--

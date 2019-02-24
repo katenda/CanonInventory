@@ -2,7 +2,7 @@ from django.shortcuts import render, redirect,get_object_or_404
 from .models import *
 from .forms import *
 from datetime import datetime,timezone
-from django.utils import timezone
+from datetime import datetime
 from .resources import *
 from twilio.rest import Client
 from twilio.base.exceptions import TwilioRestException
@@ -687,6 +687,9 @@ def salaryreport (request):
         'queryset': queryset,
         'total': total,
     }
+    return render(request, 'accountantapp/salaryindex.html', context)
+
+
 #def expenditurereport(request):
 def expenditurereport (request):
   current_month = datetime.timezone.now().month
@@ -729,8 +732,10 @@ def sundryreport (request):
 #Printing Expenditure Report
 class expenditurepdf(View):
     def get(self, request):
-        expense = Spend.objects.all().order_by('-Date')
         today = timezone.now()
+        current_month = datetime.now().month
+        expense = Spend.objects.filter(Date__month=current_month).order_by('-Date')
+
         month = today.strftime('%B')
         totalexpense = 0
         for instance in expense:
@@ -747,7 +752,9 @@ class expenditurepdf(View):
 #Printing Salaries Report
 class salariespdf(View):
     def get(self, request):
-        salaries = Salary.objects.all().order_by('-Date')
+
+        current_month = datetime.now().month
+        salaries = Salary.objects.filter(Date__month=current_month).order_by('-Date')
         today = timezone.now()
         month = today.strftime('%B')
         totalsalary = 0
@@ -767,7 +774,8 @@ class salariespdf(View):
 #Printing Sundry Expenses Report
 class sundrypdf(View):
     def get(self, request):
-        sundry = Sundry.objects.all().order_by('-Date')
+        current_month = datetime.now().month
+        sundry = Sundry.objects.filter(Date__month=current_month).order_by('-Date')
         today = timezone.now()
         month = today.strftime('%B')
         totalsundry = 0

@@ -2,12 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4546244c-9da5-41f7-bfdd-fbd4ffe6d6f8" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/CanonInventory.iml" afterPath="$PROJECT_DIR$/.idea/CanonInventory.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/receptionistapp/templates/accountantapp/expenditurearchive.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/receptionistapp/templates/accountantapp/salaryarchive.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/receptionistapp/templates/accountantapp/sundryarchive.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CanonInventory/settings.py" afterPath="$PROJECT_DIR$/CanonInventory/settings.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/receptionistapp/templates/accountantapp/Accprofile.html" afterPath="$PROJECT_DIR$/receptionistapp/templates/accountantapp/Accprofile.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/receptionistapp/templates/accountantapp/base.html" afterPath="$PROJECT_DIR$/receptionistapp/templates/accountantapp/base.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/receptionistapp/templates/accountantapp/expenditureindex.html" afterPath="$PROJECT_DIR$/receptionistapp/templates/accountantapp/expenditureindex.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/receptionistapp/templates/accountantapp/expenditurepdf.html" afterPath="$PROJECT_DIR$/receptionistapp/templates/accountantapp/expenditurepdf.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/receptionistapp/templates/accountantapp/pdf.html" afterPath="$PROJECT_DIR$/receptionistapp/templates/accountantapp/pdf.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/receptionistapp/templates/accountantapp/salaryindex.html" afterPath="$PROJECT_DIR$/receptionistapp/templates/accountantapp/salaryindex.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/receptionistapp/templates/accountantapp/sundryindex.html" afterPath="$PROJECT_DIR$/receptionistapp/templates/accountantapp/sundryindex.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/receptionistapp/templates/accountantapp/sundrypdf.html" afterPath="$PROJECT_DIR$/receptionistapp/templates/accountantapp/sundrypdf.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/receptionistapp/urls.py" afterPath="$PROJECT_DIR$/receptionistapp/urls.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/receptionistapp/views.py" afterPath="$PROJECT_DIR$/receptionistapp/views.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -16,6 +22,9 @@
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CoverageDataManager">
+    <SUITE FILE_PATH="coverage/CanonInventory$views.coverage" NAME="views Coverage Results" MODIFIED="1551072174411" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/receptionistapp" />
   </component>
   <component name="DatabaseView">
     <option name="SHOW_INTERMEDIATE" value="true" />
@@ -42,34 +51,74 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Accprofile.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/receptionistapp/templates/accountantapp/Accprofile.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-36">
-              <caret line="9" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="expenditureindex.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/receptionistapp/templates/accountantapp/expenditureindex.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="19" column="11" lean-forward="false" selection-start-line="19" selection-start-column="11" selection-end-line="21" selection-end-column="15" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="views.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/receptionistapp/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="368">
-              <caret line="857" column="42" lean-forward="false" selection-start-line="857" selection-start-column="42" selection-end-line="857" selection-end-column="42" />
+            <state relative-caret-position="-1194">
+              <caret line="776" column="44" lean-forward="false" selection-start-line="776" selection-start-column="44" selection-end-line="776" selection-end-column="44" />
               <folding>
                 <element signature="e#0#63#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Accprofile.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/receptionistapp/templates/accountantapp/Accprofile.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="52" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="52" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="sundryarchive.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/receptionistapp/templates/accountantapp/sundryarchive.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="52" lean-forward="false" selection-start-line="0" selection-start-column="52" selection-end-line="0" selection-end-column="52" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="expenditurearchive.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/receptionistapp/templates/accountantapp/expenditurearchive.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="52" lean-forward="false" selection-start-line="0" selection-start-column="52" selection-end-line="0" selection-end-column="52" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="urls.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/receptionistapp/urls.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="359">
+              <caret line="100" column="27" lean-forward="false" selection-start-line="100" selection-start-column="27" selection-end-line="100" selection-end-column="27" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="salaryarchive.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/receptionistapp/templates/accountantapp/salaryarchive.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="52" lean-forward="false" selection-start-line="0" selection-start-column="52" selection-end-line="0" selection-end-column="52" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="base.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/receptionistapp/templates/accountantapp/base.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="653">
+              <caret line="44" column="18" lean-forward="false" selection-start-line="44" selection-start-column="18" selection-end-line="44" selection-end-column="18" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -103,15 +152,9 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/receptionistapp/templates/operationsapp/operations_header.html" />
-        <option value="$PROJECT_DIR$/receptionistapp/templates/operationsapp/operations_view_drivers.html" />
-        <option value="$PROJECT_DIR$/receptionistapp/templates/operationsapp/operations_view_car_details.html" />
-        <option value="$PROJECT_DIR$/receptionistapp/templates/accountantapp/create_driver_monthly_archive.html" />
-        <option value="$PROJECT_DIR$/receptionistapp/templates/operationsapp/operations_driver_financial_statement.html" />
-        <option value="$PROJECT_DIR$/receptionistapp/templates/operationsapp/operations_notify_driver.html" />
-        <option value="$PROJECT_DIR$/receptionistapp/templates/operationsapp/operations_view_driver_payments.html" />
         <option value="$PROJECT_DIR$/receptionistapp/templates/operationsapp/archives.html" />
         <option value="$PROJECT_DIR$/receptionistapp/templates/accountantapp/index.html" />
+        <option value="$PROJECT_DIR$/receptionistapp/templates/accountantapp/Accprofile.html" />
         <option value="$PROJECT_DIR$/receptionistapp/templates/accountantapp/accountant_header.html" />
         <option value="$PROJECT_DIR$/receptionistapp/templates/accountantapp/add_new.html" />
         <option value="$PROJECT_DIR$/receptionistapp/templates/managerapp/base_visitor.html" />
@@ -133,12 +176,10 @@
         <option value="$PROJECT_DIR$/receptionistapp/templates/managerapp/create_member.html" />
         <option value="$PROJECT_DIR$/receptionistapp/templates/managerapp/members.html" />
         <option value="$PROJECT_DIR$/CanonInventory/urls.py" />
-        <option value="$PROJECT_DIR$/receptionistapp/templates/accountantapp/expenditureindex.html" />
-        <option value="$PROJECT_DIR$/receptionistapp/templates/accountantapp/sundryindex.html" />
-        <option value="$PROJECT_DIR$/receptionistapp/templates/accountantapp/salaryindex.html" />
         <option value="$PROJECT_DIR$/receptionistapp/templates/accountantapp/driver_general_financial_report.html" />
         <option value="$PROJECT_DIR$/receptionistapp/templates/authenticapp/base.html" />
         <option value="$PROJECT_DIR$/receptionistapp/templates/authenticapp/creat_user.html" />
+        <option value="$PROJECT_DIR$/CanonInventory/settings.py" />
         <option value="$PROJECT_DIR$/receptionistapp/models.py" />
         <option value="$PROJECT_DIR$/receptionistapp/static/receptionistapp/css/fonts.css" />
         <option value="$PROJECT_DIR$/receptionistapp/static/receptionistapp/css/base.css" />
@@ -149,11 +190,19 @@
         <option value="$PROJECT_DIR$/receptionistapp/templates/receptionistapp/receptionist_add_complaint.html" />
         <option value="$PROJECT_DIR$/receptionistapp/templates/authenticapp/manager_home.html" />
         <option value="$PROJECT_DIR$/receptionistapp/admin.py" />
-        <option value="$PROJECT_DIR$/receptionistapp/urls.py" />
         <option value="$PROJECT_DIR$/receptionistapp/templates/authenticapp/login.html" />
-        <option value="$PROJECT_DIR$/receptionistapp/templates/accountantapp/Accprofile.html" />
-        <option value="$PROJECT_DIR$/CanonInventory/settings.py" />
         <option value="$PROJECT_DIR$/receptionistapp/views.py" />
+        <option value="$PROJECT_DIR$/receptionistapp/templates/accountantapp/expenditureindex.html" />
+        <option value="$PROJECT_DIR$/receptionistapp/templates/accountantapp/salaryindex.html" />
+        <option value="$PROJECT_DIR$/receptionistapp/templates/accountantapp/sundryindex.html" />
+        <option value="$PROJECT_DIR$/receptionistapp/templates/accountantapp/expenditurepdf.html" />
+        <option value="$PROJECT_DIR$/receptionistapp/templates/accountantapp/pdf.html" />
+        <option value="$PROJECT_DIR$/receptionistapp/templates/accountantapp/sundrypdf.html" />
+        <option value="$PROJECT_DIR$/receptionistapp/templates/accountantapp/base.html" />
+        <option value="$PROJECT_DIR$/receptionistapp/templates/accountantapp/sundryarchive.html" />
+        <option value="$PROJECT_DIR$/receptionistapp/templates/accountantapp/salaryarchive.html" />
+        <option value="$PROJECT_DIR$/receptionistapp/templates/accountantapp/expenditurearchive.html" />
+        <option value="$PROJECT_DIR$/receptionistapp/urls.py" />
       </list>
     </option>
   </component>
@@ -239,6 +288,28 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="receptionistapp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="templates" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="accountantapp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="CanonInventory" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="CanonInventory" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="CanonInventory" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -250,24 +321,23 @@
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../accountant" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="SearchEverywhereHistoryKey" value="ter&#9;ACTION&#9;ActivateTerminalToolWindow&#10;termi&#9;ACTION&#9;ActivateTerminalToolWindow&#10;TER&#9;ACTION&#9;ActivateTerminalToolWindow&#10;term&#9;ACTION&#9;ActivateTerminalToolWindow&#10;TERM&#9;ACTION&#9;ActivateTerminalToolWindow&#10;termina&#9;ACTION&#9;ActivateTerminalToolWindow&#10;termin&#9;ACTION&#9;ActivateTerminalToolWindow" />
-    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\User\Desktop\CanonInventory\media" />
-      <recent name="C:\Users\User\Desktop\CanonInventory\receptionistapp" />
-      <recent name="C:\Users\User\Desktop\CanonInventory\receptionistapp\templates\operationsapp" />
-      <recent name="C:\Users\User\Desktop\CanonInventory\receptionistapp\templates\receptionistapp" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\User\innovations\IMS\CanonInventory\receptionistapp\templates\accountantapp" />
       <recent name="C:\Users\User\Desktop\CanonInventory\receptionistapp\templates\managerapp" />
       <recent name="C:\Users\User\Desktop\CanonInventory\media" />
       <recent name="C:\Users\User\Desktop\CanonInventory\receptionistapp" />
       <recent name="C:\Users\User\Desktop\CanonInventory\receptionistapp\templates\accountantapp" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\User\Desktop\CanonInventory\media" />
+      <recent name="C:\Users\User\Desktop\CanonInventory\receptionistapp" />
+      <recent name="C:\Users\User\Desktop\CanonInventory\receptionistapp\templates\operationsapp" />
       <recent name="C:\Users\User\Desktop\CanonInventory\receptionistapp\templates\receptionistapp" />
     </key>
   </component>
@@ -283,7 +353,26 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Django server.CanonInventory">
+  <component name="RunManager" selected="Python.views">
+    <configuration default="false" name="views" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/receptionistapp" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="CanonInventory" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/receptionistapp/views.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <method />
+    </configuration>
     <configuration default="true" type="DjangoTestsConfigurationType" factoryName="Django tests">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -479,9 +568,15 @@
       <option name="customRunCommand" value="" />
       <method />
     </configuration>
-    <list size="1">
+    <list size="2">
       <item index="0" class="java.lang.String" itemvalue="Django server.CanonInventory" />
+      <item index="1" class="java.lang.String" itemvalue="Python.views" />
     </list>
+    <recent_temporary>
+      <list size="1">
+        <item index="0" class="java.lang.String" itemvalue="Python.views" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="ShelveChangesManager" show_recycled="false">
     <option name="remove_strategy" value="false" />
@@ -497,6 +592,21 @@
       <option name="presentableId" value="Default" />
       <updated>1549350236084</updated>
     </task>
+    <task id="LOCAL-00001" summary="third changes">
+      <created>1551010910966</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1551010910967</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Merge remote-tracking branch 'origin/master'&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml">
+      <created>1551011019915</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1551011019915</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TodoView" selected-index="2">
@@ -511,7 +621,7 @@
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16263238" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24054463" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.10801964" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.43217665" sideWeight="0.13323572" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.44326776" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -524,13 +634,25 @@
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.10801964" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.43217665" sideWeight="0.13323572" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32833335" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.0" sideWeight="0.86676425" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.935" sideWeight="0.6368961" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.34066767" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.6383333" sideWeight="0.49707174" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.44326776" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Concurrent Activities Diagram" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -538,6 +660,12 @@
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
+    <MESSAGE value="third changes" />
+    <MESSAGE value="Merge remote-tracking branch 'origin/master'&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml" />
+    <option name="LAST_COMMIT_MESSAGE" value="Merge remote-tracking branch 'origin/master'&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -553,14 +681,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/receptionistapp/templates/managerapp/user_list.html" />
-    <entry file="file://$PROJECT_DIR$/receptionistapp/templates/managerapp/user_confirm_delete.html" />
-    <entry file="file://$PROJECT_DIR$/receptionistapp/templates/managerapp/register.html" />
-    <entry file="file://$PROJECT_DIR$/receptionistapp/templates/managerapp/reg_form.html" />
-    <entry file="file://$PROJECT_DIR$/receptionistapp/templates/managerapp/redirect.html" />
-    <entry file="file://$PROJECT_DIR$/receptionistapp/templates/managerapp/password_reset_subject.txt" />
-    <entry file="file://$PROJECT_DIR$/receptionistapp/templates/managerapp/password_reset_form.html" />
-    <entry file="file://$PROJECT_DIR$/receptionistapp/templates/managerapp/password_reset_email.html" />
     <entry file="file://$PROJECT_DIR$/receptionistapp/templates/managerapp/password_reset_done.html" />
     <entry file="file://$PROJECT_DIR$/receptionistapp/templates/managerapp/password_reset_confirm.html" />
     <entry file="file://$PROJECT_DIR$/receptionistapp/templates/managerapp/manager.html" />
@@ -580,6 +700,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
           <caret line="4" column="43" lean-forward="true" selection-start-line="4" selection-start-column="43" selection-end-line="4" selection-end-column="43" />
+          <folding>
+            <element signature="e#0#35#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -590,31 +713,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/receptionistapp/templates/accountantapp/sundryindex.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="22" column="15" lean-forward="false" selection-start-line="22" selection-start-column="15" selection-end-line="22" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/receptionistapp/templates/accountantapp/salaryindex.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="22" column="15" lean-forward="false" selection-start-line="22" selection-start-column="15" selection-end-line="22" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/receptionistapp/templates/accountantapp/driver_general_financial_report.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
           <caret line="11" column="18" lean-forward="false" selection-start-line="11" selection-start-column="18" selection-end-line="11" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/receptionistapp/templates/accountantapp/base.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="37" column="0" lean-forward="true" selection-start-line="37" selection-start-column="0" selection-end-line="37" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -623,6 +725,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -641,6 +744,14 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/receptionistapp/templates/authenticapp/creat_user.html" />
+    <entry file="file://$PROJECT_DIR$/CanonInventory/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="87">
+          <caret line="47" column="23" lean-forward="true" selection-start-line="47" selection-start-column="23" selection-end-line="47" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/receptionistapp/static/receptionistapp/css/login.css" />
     <entry file="file://$PROJECT_DIR$/receptionistapp/static/receptionistapp/css/responsive.css" />
     <entry file="file://$PROJECT_DIR$/receptionistapp/static/receptionistapp/css/base.css" />
@@ -655,6 +766,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
           <caret line="14" column="0" lean-forward="true" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -662,6 +774,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
           <caret line="14" column="51" lean-forward="true" selection-start-line="14" selection-start-column="51" selection-end-line="14" selection-end-column="51" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -669,6 +782,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
           <caret line="3" column="26" lean-forward="true" selection-start-line="3" selection-start-column="26" selection-end-line="3" selection-end-column="26" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -684,6 +798,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="459">
           <caret line="27" column="6" lean-forward="false" selection-start-line="27" selection-start-column="6" selection-end-line="27" selection-end-column="6" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -691,13 +806,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="39">
           <caret line="177" column="31" lean-forward="true" selection-start-line="177" selection-start-column="31" selection-end-line="177" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/receptionistapp/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="393">
-          <caret line="102" column="35" lean-forward="false" selection-start-line="102" selection-start-column="25" selection-end-line="102" selection-end-column="35" />
           <folding />
         </state>
       </provider>
@@ -706,40 +814,129 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="376">
           <caret line="87" column="38" lean-forward="true" selection-start-line="87" selection-start-column="38" selection-end-line="87" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CanonInventory/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1394">
-          <caret line="82" column="0" lean-forward="false" selection-start-line="82" selection-start-column="0" selection-end-line="82" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/receptionistapp/templates/accountantapp/Accprofile.html">
+    <entry file="file://$PROJECT_DIR$/receptionistapp/templates/accountantapp/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-36">
-          <caret line="9" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+        <state relative-caret-position="-71">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/receptionistapp/templates/accountantapp/sundryindex.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="286">
+          <caret line="64" column="0" lean-forward="true" selection-start-line="64" selection-start-column="0" selection-end-line="64" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/receptionistapp/templates/accountantapp/salaryindex.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="232">
+          <caret line="64" column="4" lean-forward="true" selection-start-line="64" selection-start-column="4" selection-end-line="69" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/receptionistapp/templates/accountantapp/expenditureindex.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="19" column="11" lean-forward="false" selection-start-line="19" selection-start-column="11" selection-end-line="21" selection-end-column="15" />
+        <state relative-caret-position="266">
+          <caret line="65" column="8" lean-forward="false" selection-start-line="65" selection-start-column="8" selection-end-line="65" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/receptionistapp/templates/accountantapp/expenditurepdf.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-20">
+          <caret line="73" column="43" lean-forward="false" selection-start-line="73" selection-start-column="43" selection-end-line="73" selection-end-column="43" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/receptionistapp/templates/accountantapp/pdf.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="184">
+          <caret line="71" column="43" lean-forward="false" selection-start-line="71" selection-start-column="43" selection-end-line="71" selection-end-column="43" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/receptionistapp/templates/accountantapp/expensereceipt.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1122">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/receptionistapp/templates/accountantapp/sundrypdf.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="72" column="43" lean-forward="false" selection-start-line="72" selection-start-column="43" selection-end-line="72" selection-end-column="43" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/receptionistapp/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="368">
-          <caret line="857" column="42" lean-forward="false" selection-start-line="857" selection-start-column="42" selection-end-line="857" selection-end-column="42" />
+        <state relative-caret-position="-1194">
+          <caret line="776" column="44" lean-forward="false" selection-start-line="776" selection-start-column="44" selection-end-line="776" selection-end-column="44" />
           <folding>
             <element signature="e#0#63#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/receptionistapp/templates/accountantapp/base.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="653">
+          <caret line="44" column="18" lean-forward="false" selection-start-line="44" selection-start-column="18" selection-end-line="44" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/receptionistapp/templates/accountantapp/Accprofile.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="52" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="52" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/receptionistapp/templates/accountantapp/salaryarchive.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="52" lean-forward="false" selection-start-line="0" selection-start-column="52" selection-end-line="0" selection-end-column="52" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/receptionistapp/templates/accountantapp/sundryarchive.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="52" lean-forward="false" selection-start-line="0" selection-start-column="52" selection-end-line="0" selection-end-column="52" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/receptionistapp/templates/accountantapp/expenditurearchive.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="52" lean-forward="false" selection-start-line="0" selection-start-column="52" selection-end-line="0" selection-end-column="52" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/receptionistapp/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="359">
+          <caret line="100" column="27" lean-forward="false" selection-start-line="100" selection-start-column="27" selection-end-line="100" selection-end-column="27" />
+          <folding />
         </state>
       </provider>
     </entry>

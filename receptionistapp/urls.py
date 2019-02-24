@@ -96,7 +96,9 @@ urlpatterns = [
     url(r'^salaryreceipt/', salaryreceipt.as_view() ,name='salaryreceipt'),
     url(r'^sundryreceipt/', sundryreceipt.as_view() ,name='sundryreceipt'),
 
-
+    url(r'^expenditurearchive/', expenditurearchive, name='expenditurearchive'),
+    url(r'^salaryarchive/', salaryarchive, name='salaryarchive'),
+    url(r'^sundryarchive/',sundryarchive, name='sundryarchive'),
 
     #################
     #manager urls
